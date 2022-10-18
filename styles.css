@@ -1,0 +1,256 @@
+:root {
+    --red: red;
+    --black: rgb(0,0,0);
+    --white: white;
+    --dark_grey: rgb(30, 30, 30);
+    --light_grey: rgb(45, 45, 45);
+    --purple_lilac: #989cb9;
+    --yellow: yellow;
+    --crimson: #D00000;
+    --blue: #0D4F8B;
+    --description: rgba(0, 0, 0, 0.15);
+}
+
+* {box-sizing: border-box;}
+
+html, body {
+    background-color: #404040;
+}
+
+header {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 20px;
+}
+
+.profile {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+.emoji {
+    position: absolute;
+    font-size: 30px;
+    top: -15px;
+    right: -15px;
+}
+
+.text {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+h1 {
+    position: relative;
+    margin: 0;
+    font-family: 'Architects Daughter', cursive;
+    top: 7px;
+}
+
+.italic {
+    font-style: italic;
+    font-family: 'Rubik', sans-serif;
+}
+
+.sites {
+    display: inline;
+    color: var(--red);
+    text-decoration: none;
+    margin-right: 10px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.films_préférés{
+    background-color: var(--dark_grey);
+    padding: 20px;
+}
+
+h2 {
+    color: var(--white);
+    font-family: 'Architects Daughter', cursive;
+}
+
+.lien_film {
+    width: 75%;
+    margin: 10px 0px;
+    display: inline-block;
+    color: var(--red);
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--black);
+    border-radius: 25px 0%;
+    box-shadow: 0 0 10px var(--red);
+    overflow: hidden;
+    font-family: 'Rubik', sans-serif;
+}
+
+.titre {
+    width: 100%;
+    padding: 10px;
+}
+
+.img_film {
+    display: block;
+    width: 100%;
+}
+
+.lien_film:nth-child(4) {
+    box-shadow: 0 0 10px var(--white);
+    border-radius: 0% 25px;
+}
+
+.livres_préférés {
+    background-color: var(--light_grey);
+    padding-top: 20px; 
+    display: block;
+}
+
+#titre-livres {
+    padding-left: 20px;
+}
+
+@font-face {
+    font-family: "Nebula";
+    src: url("fontes/Nebula-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "HarryP";
+    src: url("fontes/HARRYP__.TTF") format("truetype");
+}
+
+@font-face {
+    font-family: "Ring Bearer";
+    src: url("fontes/RINGM__.TTF") format("truetype");
+}
+
+.fondation {
+    font-family: "Nebula";
+    color: var(--purple_lilac);
+    font-size: 100px;
+    text-shadow: 5px 5px var(--black);
+    text-align: right;
+    background-image: url("img/fondation.jpg");
+    background-size: 100%;
+    background-position: 0% 20%;
+}
+
+.hp {
+    font-family: "HarryP";
+    color: var(--yellow);
+    font-size: 90px;
+    -webkit-text-stroke: 3px var(--black);
+    background-image: url("img/harry_potter.jpg");
+    background-size: 100%;
+    background-position: 0% 37%;
+}
+
+.tbate {
+    font-family: "Ring Bearer";
+    color: var(--black);
+    font-size: 75px;
+    background-image: url("img/tbate.png");
+    background-size: 100%;
+    background-position: 0% 28%;
+}
+
+details{
+    padding: 20px;
+    font-family: 'Architects Daughter';
+}
+
+.details_1{
+    background-color: var(--crimson);
+    font-weight: bold;
+}
+
+.details_2{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.pâtes::before{
+    content: '🍝 ';
+}
+
+.details_2[open]::after{
+    content: ' 🍰'
+}
+
+main{
+    display: inline-block;
+    width: 100%;
+}
+
+.celebrite{
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+
+.bloc_celebrite{
+    width: 100%;
+    background-color: var(--crimson);
+}
+
+.silent_planet{
+    display: block;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+figure{
+    margin: 0;
+    padding: 0;
+}
+
+figcaption{
+    background-color: var(--description);
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+.citation{
+    font-size: 16px;
+    padding: 20px;
+}
+
+cite{
+    display: block;
+    text-align: right;
+}
+
+@media (min-width: 800px){
+    main { width: 75% }
+    .celebrite { width: 25% }
+}
+
+@media (min-width: 600px){
+    .lien_film { width: 30%;
+                 margin: 0px 5px; }
+}
+
+.trailer_film{
+    margin-top: 20px;
+    margin-left: 5px;
+    width: 92%;
+    height: 500px;
+}
+
+.lien_film:hover {
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+.details_1:hover{
+    transition: background-color 0.5s;
+    background-color: var(--yellow);
+}
+
+.details_2:hover{
+    transition: background-color 0.5s;
+    background-color: var(--blue);
+}
