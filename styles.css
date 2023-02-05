@@ -117,8 +117,8 @@ h2 {
 }
 
 @font-face {
-    font-family: "HarryP";
-    src: url("fontes/HARRYP__.TTF") format("truetype");
+    font-family: "Dune";
+    src: url("fontes/Dune_Rise.ttf") format("truetype");
 }
 
 @font-face {
@@ -137,14 +137,15 @@ h2 {
     background-position: 0% 20%;
 }
 
-.hp {
-    font-family: "HarryP";
+.dune {
+    font-family: "Dune";
     color: var(--yellow);
     font-size: 90px;
     -webkit-text-stroke: 3px var(--black);
-    background-image: url("img/harry_potter.jpg");
+    background-image: url("img/dune.jpg");
     background-size: 100%;
-    background-position: 0% 37%;
+    background-position: 0% 28%;
+    text-transform: uppercase;
 }
 
 .tbate {
@@ -221,6 +222,10 @@ figcaption{
 cite{
     display: block;
     text-align: right;
+}
+
+footer {
+    height: 50px;
 }
 
 @media (min-width: 800px){
